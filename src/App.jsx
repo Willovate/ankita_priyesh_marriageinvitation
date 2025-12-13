@@ -705,16 +705,6 @@ function App() {
                   {t.patilFamily}
                 </p>
               </div>
-
-              {/* Sweet Invitation */}
-              <div className="py-4">
-                <p className="text-maroon/60 text-xs sm:text-sm tracking-widest mb-2 uppercase">
-                  {t.sweetInvitation}
-                </p>
-                <p className="text-maroon text-2xl sm:text-2xl md:text-3xl font-serif italic">
-                  {t.childrenNames}
-                </p>
-              </div>
             </div>
           </div>
         </div>
