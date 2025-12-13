@@ -194,7 +194,7 @@ const translations = {
     getDirections: "Get Directions",
     welcomeTitle: "Awaiting to Welcome You",
     hostedBy: "Alka Mohit Patil",
-    patilFamily: "Patil Family",
+    patilFamily: "Patil Family & Gondane Family",
     sweetInvitation: "Sweet Invitation By",
     childrenNames: "Ayansh, Karunesh & Agastya",
     noAher: "🙏 No Aher Please 🙏",
@@ -236,7 +236,7 @@ const translations = {
     getDirections: "दिशा मिळवा",
     welcomeTitle: "आपले स्वागत करण्यासाठी उत्सुक",
     hostedBy: "अल्का मोहित पाटील",
-    patilFamily: "पाटील परिवार",
+    patilFamily: "पाटील परिवार आणि गोंडाणे परिवार",
     sweetInvitation: "गोड निमंत्रण",
     childrenNames: "आयांश, करुणेश आणि अगस्त्य",
     noAher: "🙏 कृपया अहेर नको 🙏",
@@ -702,10 +702,6 @@ function App() {
               {/* Hosted By - Simple Elegant */}
               <div className="py-6">
                 <p className="text-maroon text-3xl sm:text-xl md:text-2xl font-medium">
-                  {t.hostedBy}
-                </p>
-                <p className="text-gold text-xl my-2">&</p>
-                <p className="text-maroon text-3xl sm:text-xl md:text-2xl font-medium">
                   {t.patilFamily}
                 </p>
               </div>
@@ -719,69 +715,6 @@ function App() {
                   {t.childrenNames}
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section
-        id="contact"
-        data-animate
-        className="relative py-20 md:py-32 overflow-hidden"
-      >
-        {/* Background */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-fixed"
-          style={{
-            backgroundImage: `url('/images/image8.jpg')`,
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-br from-maroon/85 via-maroon/80 to-maroon/85"></div>
-        </div>{" "}
-        {/* Decorative */}
-        <div className="absolute top-10 left-10 opacity-20 animate-float">
-          <img src="/images/Image9.png" alt="Lotus" className="w-24 h-20" />
-        </div>
-        <div
-          className="absolute bottom-10 right-10 opacity-20 animate-float"
-          style={{ animationDelay: "3s" }}
-        >
-          <img src="/images/Image9.png" alt="Lotus" className="w-24 h-20" />
-        </div>
-        {/* Sparkles */}
-        <SparkleEffect />
-        <div
-          className={`container mx-auto px-6 md:px-12 relative z-10 transition-all duration-1000 ${
-            isVisible.contact
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-10"
-          }`}
-        >
-          <div className="max-w-2xl mx-auto px-3 sm:px-4">
-            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-14 shadow-2xl text-center hover:shadow-3xl transition-all duration-500 border-t-4 border-gold hover:scale-[1.02]">
-              <p className="text-maroon/60 text-xs sm:text-sm tracking-[0.2em] mb-3 uppercase">
-                {t.from}
-              </p>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-serif text-maroon mb-6 italic">
-                {t.contactPerson}
-              </h3>
-              <div className="w-20 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mb-6"></div>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl leading-relaxed mb-8 px-2">
-                {t.contactAddress1}
-                {t.contactAddress2}
-                <br />
-                <span className="font-semibold text-maroon">
-                  {t.contactAddress3}
-                </span>
-              </p>
-              <a
-                href="tel:+918149242289"
-                className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-maroon to-maroon/90 text-white px-8 sm:px-10 py-4 rounded-full font-semibold hover:from-maroom hover:to-maroom hover:text-gold transition-all duration-300 active:scale-95 text-base sm:text-lg shadow-xl hover:scale-110 min-h-[48px]"
-              >
-                <Phone className="w-5 h-5" />
-                +91 81492 42289
-              </a>
             </div>
           </div>
         </div>
